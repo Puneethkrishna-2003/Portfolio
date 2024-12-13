@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puneeth's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .glassy-bg {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-height {
+            min-height: 100vh;
+        }
+
+        .nav-hover:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .hero-content {
+            z-index: 10;
+            position: relative;
+        }
+
+        .content {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">Puneeth Krishna</div>
+            <div class="space-x-6">
+                <a href="#home" class="text-gray-700 nav-hover">Home</a>
+                <a href="#about" class="text-gray-700 nav-hover">About</a>
+                <a href="#projects" class="text-gray-700 nav-hover">Projects</a>
+                <a href="#skills" class="text-gray-700 nav-hover">Skills</a>
+                <a href="#contact" class="text-gray-700 nav-hover">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative section-height w-full flex items-center justify-center">
+        <div id="particles-js" class="absolute inset-0"></div>
+
+        <div class="container mx-auto px-4 grid md:grid-cols-2 items-center gap-12 hero-content">
+            <div class="flex justify-center md:justify-end">
+                <div class="relative">
+                    <div class="absolute -inset-2 bg-blue-400 rounded-full opacity-50 blur-xl"></div>
+                    <img src="itsme.png" alt="Puneeth"
+                        class="relative z-10 w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border-4 border-white shadow-2xl">
+                </div>
+            </div>
+
+            <div class="text-left md:pr-12">
+                <div class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
+                    <h1 class="text-3xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
+                        Innovative Developer<br>
+                        <span class="text-blue-600">Creative Thinker</span>
+                    </h1>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        Hi, I'm Puneeth—a passionate developer specializing in game development,
+                        web development, and interactive applications. I transform technical skills
+                        into creative storytelling, crafting engaging digital experiences.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects"
+                            class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center">
+                            <i class="fas fa-project-diagram mr-2"></i>
+                            View Projects
+                        </a>
+                        <a href="#contact"
+                            class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="w-full min-h-screen flex items-center justify-center bg-white">
+        <div class="container mx-auto px-4 w-full">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">About Me</h2>
+            <div class="grid md:grid-cols-2 w-full gap-8">
+                <div class="glassmorphic p-8 rounded-xl shadow-lg">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-700 flex items-center">
+                            <i class="fas fa-user-graduate mr-3 text-blue-600"></i>
+                            Academic Journey
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Currently pursuing a Bachelor of Engineering in Computer Science at "Bapuji Institute of Engineering and Technology",
+                            I'm a 3rd-year student with a passionate focus on game development and innovative
+                            web technologies. My academic journey has been characterized by a blend of theoretical
+                            knowledge and practical application.
+                        </p>
+                    </div>
+
+                    <div class="bg-blue-50 p-5 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-3 text-blue-800 flex items-center">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            Academic Highlights
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Current CGPA: 7.5/10</li>
+                            <!-- <li>Active Member of University's Tech Innovation Club</li>
+                            <li>Recipient of Academic Excellence Award (2023)</li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glassmorphic p-8 rounded-xl shadow-lg">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-700 flex items-center">
+                            <i class="fas fa-rocket mr-3 text-green-600"></i>
+                            Professional Vision
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            My career aspirations extend beyond traditional development. I'm passionate about
+                            creating immersive gaming experiences and innovative web applications that solve
+                            real-world problems. My goal is to become a versatile software developer specializing
+                            in Full Stack Development, and interactive web technologies.
+                        </p>
+                    </div>
+
+                    <div class="bg-green-50 p-5 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-3 text-green-800 flex items-center">
+                            <i class="fas fa-lightbulb mr-2"></i>
+                            Key Achievements
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <!-- <li>Winner, College Coding Hackathon 2023</li> -->
+                            <li>Developed a Global Pocket Chat Application</li>
+                            <li>Best Game Concept, Retro Style</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 w-full glassmorphic p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold mb-6 text-gray-700 flex items-center">
+                    <i class="fas fa-code mr-3 text-purple-600"></i>
+                    Personal Philosophy
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3 text-gray-700">Innovative Approach</h4>
+                        <p class="text-gray-600">
+                            I believe in pushing technological boundaries through creative problem-solving.
+                            My approach combines technical expertise with storytelling, creating experiences
+                            that are not just functional, but truly engaging.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3 text-gray-700">Continuous Learning</h4>
+                        <p class="text-gray-600">
+                            Technology evolves rapidly, and so do I. I'm committed to continuous learning,
+                            exploring new technologies, and staying ahead of industry trends through
+                            personal projects, online courses, and active community participation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-height w-full flex items-center justify-center bg-gray-50">
+        <div class="container mx-auto px-4 glassy-bg p-12 max-w-5xl">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">My Projects</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="project-card bg-white rounded-lg shadow-md p-6 cursor-pointer"
+                    onclick="openModal('pixelAdventureModal')">
+                    <div class="hover-zoom mb-4">
+                        <img src="pixel.jpg" alt="Pixel Adventure" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <i class="fas fa-gamepad text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Pixel Adventure</h3>
+                    <p class="text-gray-600 mb-4">
+                        A 3-level story-based 2D platformer with retro-style graphics.
+                        Features unique level designs, enemy AI, boss fights, and innovative gameplay mechanics.
+                    </p>
+                    <div class="flex space-x-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Canvas API</span>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-lg shadow-md p-6 cursor-pointer"
+                    onclick="openModal('dbmsModal')">
+                    <div class="hover-zoom mb-4">
+                        <img src="dbms.jpg" alt="University DBMS" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <i class="fas fa-database text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">University DBMS</h3>
+                    <p class="text-gray-600 mb-4">
+                        A responsive and visually appealing frontend design for a database
+                        management system, showcasing clean UI/UX principles.
+                    </p>
+                    <div class="flex space-x-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">CSS</span>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-lg shadow-md p-6 cursor-pointer"
+                    onclick="openModal('pocketChatModal')">
+                    <div class="hover-zoom mb-4">
+                        <img src="pocketchat.jpg" alt="Pocket Chat" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <i class="fas fa-comment-dots text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Pocket Chat</h3>
+                    <p class="text-gray-600 mb-4">
+                        A real-time global chat application built with Java and Firebase,
+                        offering secure backend integration and seamless messaging.
+                    </p>
+                    <div class="flex space-x-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Java</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="pixelAdventureModal" class="fixed inset-0 z-50 hidden modal flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto relative p-8">
+            <button onclick="closeModal('pixelAdventureModal')"
+                class="absolute top-4 right-4 text-2xl text-gray-600 hover:text-gray-800">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">Pixel Adventure - Detailed Project Overview</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="hover-zoom">
+                    <img src="pixel.jpg" alt="Pixel Adventure Gameplay" class="w-full rounded-lg">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-700">Project Details</h3>
+                    <p class="text-gray-600 mb-4">
+                        Pixel Adventure is a 2D platformer game developed using JavaScript and Canvas API.
+                        The game features:
+                    </p>
+                    <ul class="list-disc pl-5 mb-4 text-gray-600">
+                        <li>3 unique story-driven levels</li>
+                        <li>Retro-style pixel graphics</li>
+                        <li>Enemies with basic AI</li>
+                        <li>Boss fight mechanics</li>
+                        <li>Health pickup and lifeline system</li>
+                    </ul>
+                    <div class="flex space-x-2">
+                        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">View Source
+                            Code</a>
+                        <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Play
+                            Game</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dbmsModal" class="fixed inset-0 z-50 hidden modal flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto relative p-8">
+            <button onclick="closeModal('dbmsModal')"
+                class="absolute top-4 right-4 text-2xl text-gray-600 hover:text-gray-800">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">University DBMS - Frontend Design</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="hover-zoom">
+                    <img src="dbms.jpg" alt="DBMS Interface" class="w-full rounded-lg">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-700">Project Overview</h3>
+                    <p class="text-gray-600 mb-4">
+                        A responsive database management system frontend designed to provide
+                        an intuitive and clean user interface for university data management.
+                    </p>
+                    <ul class="list-disc pl-5 mb-4 text-gray-600">
+                        <li>Responsive design</li>
+                        <li>Clean, modern UI/UX</li>
+                        <li>HTML and CSS implementation</li>
+                        <li>Intuitive navigation</li>
+                    </ul>
+                    <div class="flex space-x-2">
+                        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">View Source
+                            Code</a>
+                        <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Live
+                            Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pocketChatModal" class="fixed inset-0 z-50 hidden modal flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto relative p-8">
+            <button onclick="closeModal('pocketChatModal')"
+                class="absolute top-4 right-4 text-2xl text-gray-600 hover:text-gray-800">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">Pocket Chat - Global Messaging App</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="hover-zoom">
+                    <img src="pocketchat.jpg" alt="Pocket Chat Interface" class="w-full rounded-lg">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-700">Project Details</h3>
+                    <p class="text-gray-600 mb-4">
+                        A real-time global chat application built using Java and Firebase,
+                        enabling seamless communication across different platforms.
+                    </p>
+                    <ul class="list-disc pl-5 mb-4 text-gray-600">
+                        <li>Real-time messaging</li>
+                        <li>Secure backend integration</li>
+                        <li>Global user connectivity</li>
+                        <li>Firebase real-time database</li>
+                    </ul>
+                    <div class="flex space-x-2">
+                        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">View Source
+                            Code</a>
+                        <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">App
+                            Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="skills" class="section-height w-full flex items-center justify-center bg-white">
+        <div class="container mx-auto px-4 glassy-bg p-12 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">My Technical Ecosystem</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-2xl mr-3 text-blue-600"></i>
+                        <h3 class="text-xl font-semibold text-gray-700">Programming Languages</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Versatile programming skills with a focus on dynamic and object-oriented languages.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full flex items-center">
+                            <i class="fab fa-js mr-2"></i> JavaScript
+                        </span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full flex items-center">
+                            <i class="fab fa-java mr-2"></i> Java
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-2xl mr-3 text-orange-600"></i>
+                        <h3 class="text-xl font-semibold text-gray-700">Frontend Technologies</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Creating responsive and visually appealing user interfaces with modern web technologies.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full flex items-center">
+                            <i class="fab fa-html5 mr-2"></i> HTML
+                        </span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full flex items-center">
+                            <i class="fab fa-css3-alt mr-2"></i> CSS
+                        </span>
+                        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Tailwind</span>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-gamepad text-2xl mr-3 text-green-600"></i>
+                        <h3 class="text-xl font-semibold text-gray-700">Game Development</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Passionate about creating immersive 2D game experiences with advanced rendering techniques.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full flex items-center">
+                            <i class="fas fa-palette mr-2"></i> Canvas API
+                        </span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">2D Pixel Games</span>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-server text-2xl mr-3 text-indigo-600"></i>
+                        <h3 class="text-xl font-semibold text-gray-700">Backend Development</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Building scalable server-side applications with powerful Node.js and cloud integrations.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full flex items-center">
+                            <i class="fab fa-node-js mr-2"></i> Node.js
+                        </span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full flex items-center">
+                            <i class="fas fa-cloud mr-2"></i> Firebase
+                        </span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">
+                            <i class="fas fa-database mr-2"></i> API Development
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-height w-full flex items-center justify-center bg-gray-50">
+        <div class="container mx-auto px-4 glassy-bg p-12 max-w-md">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Contact Me</h2>
+            <form class="space-y-4">
+                <input type="text" placeholder="Your Name"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="email" placeholder="Your Email"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <textarea placeholder="Your Message" rows="4"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                <button type="submit"
+                    class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Send
+                    Message</button>
+            </form>
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-linkedin text-2xl"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-github text-2xl"></i></a>
+                <a href="#" class="text-gray-600 hover:text-blue-400"><i class="fab fa-twitter text-2xl"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-6 text-center">
+        <p class="text-gray-600">&copy; 2024 Puneeth's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Message sent! I will get back to you soon.');
+        });
+
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        window.addEventListener('click', function (event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
